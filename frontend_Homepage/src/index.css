@@ -1,0 +1,18 @@
+/* Primary font: Omegle (local file) - fallback to Arial if unavailable */
+/* Font file is located at ../omegle/OmegleRegular-gxDaq.otf (relative to this file: src/index.css) */
+@font-face {
+  font-family: 'Omegle';
+  src: url("../omegle/OmegleRegular-gxDaq.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font */
+body {
+  font-family: 'Omegle', Arial, sans-serif;
+}
